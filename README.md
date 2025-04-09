@@ -1,94 +1,74 @@
-# 10x Astro Starter
+# 10x Vibe Travels
 
-A modern, opinionated starter template for building fast, accessible, and AI-friendly web applications.
+## Table of Contents
+- [Project Description](#project-description)
+- [Tech Stack](#tech-stack)
+- [Getting Started Locally](#getting-started-locally)
+- [Available Scripts](#available-scripts)
+- [Project Scope](#project-scope)
+- [Project Status](#project-status)
+- [License](#license)
+
+## Project Description
+10x Vibe Travels is an innovative application that helps users quickly transform loose travel ideas into detailed, engaging, and personalized travel itineraries. Leveraging AI, the application analyzes user inputs such as travel notes, interests, and dates to generate comprehensive travel plans complete with daily itineraries, recommended activities, and personalized suggestions.
 
 ## Tech Stack
+- **Frontend:**
+  - Astro 5
+  - React 19
+  - TypeScript 5
+  - Tailwind CSS 4
+  - Shadcn/ui
+- **Backend:**
+  - Supabase (PostgreSQL, authentication)
+- **AI Integration:**
+  - Openrouter.ai (supports multiple AI providers)
+- **CI/CD & Hosting:**
+  - GitHub Actions for CI/CD
+  - DigitalOcean (via Docker images)
 
-- [Astro](https://astro.build/) v5.5.5 - Modern web framework for building fast, content-focused websites
-- [React](https://react.dev/) v19.0.0 - UI library for building interactive components
-- [TypeScript](https://www.typescriptlang.org/) v5 - Type-safe JavaScript
-- [Tailwind CSS](https://tailwindcss.com/) v4.0.17 - Utility-first CSS framework
+## Getting Started Locally
+### Prerequisites
+- **Node Version:** 22.14.0 (refer to the `.nvmrc` file)
 
-## Prerequisites
-
-- Node.js v22.14.0 (as specified in `.nvmrc`)
-- npm (comes with Node.js)
-
-## Getting Started
-
+### Installation
 1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd 10x-vibe-travels
+   ```
+3. Install the dependencies:
+   ```bash
+   npm install
+   ```
 
-```bash
-git clone https://github.com/przeprogramowani/10x-astro-starter.git
-cd 10x-astro-starter
-```
-
-2. Install dependencies:
-
-```bash
-npm install
-```
-
-3. Run the development server:
-
+### Running the Development Server
+Start the development server with the following command:
 ```bash
 npm run dev
 ```
 
-4. Build for production:
-
-```bash
-npm run build
-```
-
 ## Available Scripts
+- `npm run dev` – Starts the Astro development server.
+- `npm run build` – Builds the application for production.
+- `npm run preview` – Previews the built application.
+- `npm run astro` – Executes Astro commands.
+- `npm run lint` – Runs ESLint on the project.
+- `npm run lint:fix` – Automatically fixes linting issues.
+- `npm run format` – Formats the codebase using Prettier.
 
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run preview` - Preview production build
-- `npm run lint` - Run ESLint
-- `npm run lint:fix` - Fix ESLint issues
-
-## Project Structure
-
-```md
-.
-├── src/
-│   ├── layouts/    # Astro layouts
-│   ├── pages/      # Astro pages
-│   │   └── api/    # API endpoints
-│   ├── components/ # UI components (Astro & React)
-│   └── assets/     # Static assets
-├── public/         # Public assets
-```
-
-## AI Development Support
-
-This project is configured with AI development tools to enhance the development experience, providing guidelines for:
-
-- Project structure
-- Coding practices
-- Frontend development
-- Styling with Tailwind
-- Accessibility best practices
-- Astro and React guidelines
-
-### Cursor IDE
-
-The project includes AI rules in `.cursor/rules/` directory that help Cursor IDE understand the project structure and provide better code suggestions.
-
-### GitHub Copilot
-
-AI instructions for GitHub Copilot are available in `.github/copilot-instructions.md`
-
-### Windsurf
-
-The `.windsurfrules` file contains AI configuration for Windsurf.
-
-## Contributing
-
-Please follow the AI guidelines and coding practices defined in the AI configuration files when contributing to this project.
+## Project Scope
+**MVP Features:**
+- User registration and login.
+- AI-driven itinerary generation based on user-input travel ideas.
+- Editing and customization of generated travel plans.
+- Secure management of personal travel itineraries.
+  
+## Project Status
+This project is currently at the MVP stage. Future updates will enhance functionality and integrate additional features as outlined in the initial product requirements.
 
 ## License
-
-MIT
+This project is licensed under the MIT License.
