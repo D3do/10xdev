@@ -45,4 +45,4 @@ create policy "Users can update their own generated trip plans"
 
 create policy "Users can delete their own generated trip plans"
     on generated_trip_plans for delete
-    using (auth.uid() = user_id); 
+    using (auth.uid() = user_id);
